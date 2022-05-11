@@ -55,6 +55,30 @@ public class PracticeTest8 {
 			}
 		}
 
+		//練習問題⑦
+
+		 private boolean isEvenNumber(int value) {
+
+			if (value %2 ==0) {
+				System.out.println("true");
+			}else {
+				System.out.println("false");
+			}
+		}
+
+
+		//練習問題⑧
+
+		 private String getMessage (String name, boolean isKid) {
+
+			 if(isKid == true) {
+				 System.out.println("こんにちは、"+ name + "ちゃん");
+			 }else {
+				 System.out.println("こんにちは、"+ name + "さん");
+			 }
+
+		 }
+
 
 
 }
