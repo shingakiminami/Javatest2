@@ -2,42 +2,49 @@ package jp.co.aforce.test;
 
 public class Employee {
 
+	//フィールド
 	private int number;
 	private String name;
 	private String gender;
 	private int age;
 
-	void setNumber(int number) {
+	//コンストラクタ定義
+
+	Employee(int number, String name, String gender, int age){
 		this.number = number;
-	}
-
-	void setName(String name) {
 		this.name = name;
-	}
-
-	void setGender(String gender) {
 		this.gender = gender;
-	}
-
-	void setAge(int age) {
 		this.age = age;
 	}
 
 
-	int getNumber() {
-		return this.number;
+
+	public int getNumber() {
+		return number;
+	}
+	public void setNumber(int number) {
+		this.number = number;
 	}
 
-	String getName() {
-		return this.name;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	String getGender() {
-		return this.gender;
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
-	int getAge() {
-		return this.age;
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 

@@ -10,28 +10,31 @@ public class PracticeTest2 {
 		int y = 28;
 		double z = 3.14;
 
-		//練習問題①
+		//練習問題①-----------------------------------------------------------------
 		System.out.println(x*y);
 
-		//練習問題②
+		//練習問題②-----------------------------------------------------------------
 		System.out.println(y/x);
 
-		//練習問題③
+		//練習問題③-----------------------------------------------------------------
 		double total = y*z;
 		System.out.println(total);
 
-		//練習問題④
+		//練習問題④-----------------------------------------------------------------
 		total++;
 		System.out.println(total);
 
-		//練習問題⑤
+		//コンソール出力の中でインクリメントする場合は、++は値の前に書かないといけない
+		// 解答例：System.out.println(++total);
+
+		//練習問題⑤------------------------------------------------------------------
 		int age = 23;
 		Random rnd = new Random();
 		int randomNumber = rnd.nextInt(101);
 
-		if (age> randomNumber ) {
+		if (age > randomNumber ) {
 			System.out.println("私の方が年上です");
-		}else if (age< randomNumber ){
+		}else if (age < randomNumber ){
 			System.out.println("私の方が年下です");
 		}else {
 			System.out.println("私と同い年です");

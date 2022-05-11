@@ -8,7 +8,7 @@ public class PracticeTest3 {
 	public static void main(String[] args) {
 
 
-		//練習問題①,②
+		//練習問題①,②--------------------------------------------------------
 		String[] dates = new String[4];
 
 			dates[0] = "1";
@@ -18,41 +18,33 @@ public class PracticeTest3 {
 
 				System.out.println(dates[1]);
 
-		//練習問題④
 
-				Employee Tanaka = new Employee();
-				Employee Sato   = new Employee();
-				Employee Suzuki = new Employee();
+		// 解答例：String[] tanakaData = {"1","田中太郎","男性","27"}
+		//         System.out.println(tanakaData[1]);
 
-				Tanaka.setNumber(1);
-				Tanaka.setName("田中太郎");
-				Tanaka.setGender("男性");
-				Tanaka.setAge(27);
+		//練習問題④-----------------------------------------------------------
 
-				Sato.setNumber(2);
-				Sato.setName("佐藤花子");
-				Sato.setGender("女性");
-				Sato.setAge(22);
-
-				Suzuki.setNumber(3);
-				Suzuki.setName("鈴木次郎");
-				Suzuki.setGender("男性");
-				Suzuki.setAge(31);
 
 				ArrayList<Employee> Employees = new ArrayList<>();
 
-				Employees.add(Tanaka);
-				Employees.add(Sato);
-				Employees.add(Suzuki);
+				Employee tanaka = new Employee(1,"田中太郎","男性",27);
+				Employee sato = new Employee(2,"佐藤花子","女性",22);
+				Employee suzuki = new Employee(3,"鈴木次郎","男性",31);
+
+				Employees.add(tanaka);
+				Employees.add(sato);
+				Employees.add(suzuki);
 
 				for(Employee employee : Employees) {
-					System.out.println("番号は" + employee.getNumber() + "、名前は" + employee.getName() + "、年齢は" + employee.getAge() + "です");
+					System.out.println("番号は" + employee.getNumber()
+						+ "、名前は" + employee.getName()
+							+ "、年齢は" + employee.getAge() + "です");
 				}
 
 
 
 
-		//練習問題⑤
+		//練習問題⑤-------------------------------------------------------------
 
 		HashMap<String,Integer> Test = new HashMap<>();
 
@@ -64,9 +56,13 @@ public class PracticeTest3 {
 			System.out.println(test.getKey() + ":" + test.getValue());
 		}
 
-		//練習問題⑥
+
+		//練習問題⑥-------------------------------------------------------------
 
 		//Mapはキー・バリュー形式でデータ管理を行えるため。
+
+		// 解答例：今回は順番で持つ必要がないのと、科目名と得点を
+		//         紐づけてコレクションに格納するのが良いと考えられるため。
 
 
 

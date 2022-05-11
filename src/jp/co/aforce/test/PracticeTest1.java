@@ -1,37 +1,44 @@
 package jp.co.aforce.test;
 
 public class PracticeTest1 {
+
+	private static final double tax = 0.1;
 	public static void main(String[] args) {
 
-		//練習問題①
+		//練習問題①----------------------------------------------------------------
 
-		double tax = 0.1;
+//		double tax = 0.1; ←定数だから、static finalをつけるのが望ましい【302ページ】
 
 			System.out.println(tax);
 
 
-		//練習問題②
+		//練習問題②----------------------------------------------------------------
 
 		int x = 480;
 
-			double price = x * tax ;
+//			double price = x * tax ;
 
-				System.out.println(price);
+		int price = (int)(x*(1+tax));
+
+				System.out.println("この商品の値段は"+ price + "円です");
 
 
-		//練習問題③
+		//練習問題③----------------------------------------------------------------
 
 		String name = "新垣実菜美";
 
 			System.out.println(name);
 
 
-		//練習問題④
+		//練習問題④----------------------------------------------------------------
+
 			//アクセス制御とは、クラスやその中で定義されるフィールドやメソッドなどが
 			//他の場所から見える「範囲」を制限する仕組みのこと。
 
 
-		//練習問題⑤
-			//private
+		//練習問題⑤----------------------------------------------------------------
+			//private ←間違い
+
+			//正解：デフォルト
 	}
 }
