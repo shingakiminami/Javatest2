@@ -113,21 +113,22 @@ public class PracticeTest8 {
 
 		// 【解答】
 
-			 if(isKid == true) {
-				 return "こんにちは、"+ name + "ちゃん";
+			 if(isKid) {
+				 return "こんにちは、"+ name + "ちゃん";    // message="こんにちは、"+ name + "ちゃん";
 			 }
-			 	return "こんにちは、"+ name + "さん";
+			 	return "こんにちは、"+ name + "さん";		// message="こんにちは、"+ name + "さん";
+			 												// return message;   でもオッケー！
 
 		 	}
 
 		//★練習問題⑨----------------------------------------------------------
 
-		 public String getLongestString(String[] array) {
+		 public String getLongestString(String[] array) {   //配列の中身をチェックするために繰り返し処理が必要か分かるといいね！
 
 			 String str = null;
 			 int maxCount = array[0].length();
 
-			 	for(int i = 1; i < array.length; i++) {
+			 	for(int i = 1; i < array.length; i++) {   //配列の個数文繰り返す
 			 		if(maxCount <= array[i].length()) {
 			 			maxCount = array[i].length();
 			 			str = array[i];
